@@ -558,6 +558,111 @@ video {
   position: fixed;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.left-\[50\%\] {
+  left: 50%;
+}
+
+.top-0 {
+  top: 0px;
+}
+
+.top-\[100\%\] {
+  top: 100%;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.my-0 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.mt-\[10px\] {
+  margin-top: 10px;
+}
+
+.flex {
+  display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+.w-\[200px\] {
+  width: 200px;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.-translate-x-1\/2 {
+  --tw-translate-x: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.gap-5 {
+  gap: 1.25rem;
+}
+
+.whitespace-nowrap {
+  white-space: nowrap;
+}
+
+.border-b {
+  border-bottom-width: 1px;
+}
+
+.border-\[rgb\(241_238_228_\/_0\.25\)\] {
+  border-color: rgb(241 238 228 / 0.25);
+}
+
+.bg-\[rgb\(0_0_0_\/_0\.3\)\] {
+  background-color: rgb(0 0 0 / 0.3);
+}
+
+.bg-gray-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(31 41 55 / var(--tw-bg-opacity, 1));
+}
+
+.p-3 {
+  padding: 0.75rem;
+}
+
+.p-\[10px\] {
+  padding: 10px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+}
+
 body {
   font-family: "Josefin Sans", "Noto Sans JP", sans-serif;
   letter-spacing: 0.05em;

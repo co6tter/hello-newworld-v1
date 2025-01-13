@@ -18,27 +18,40 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body>
-    <header>
+  <body class="bg-gray-800">
+    <header
+      class="fixed top-0 left-0 border-b border-[rgb(241_238_228_/_0.25)] w-full text-center p-3"
+    >
       <div>
-        <h1><img loading="lazy" src="./img/logo.svg" alt="Sweet Shop" /></h1>
+        <h1 class="w-[200px] my-0 mx-auto">
+          <img loading="lazy" src="./img/logo.svg" alt="Sweet Shop" />
+        </h1>
+        <nav class="mt-[10px]">
+          <ul class="flex justify-center gap-5">
+            <li>
+              <a href="#about" class="text-white">About</a>
+            </li>
+            <li class="relative">
+              <a href="#menu" class="text-white" id="js-toggle">Menu</a>
+              <ul
+                class="bg-[rgb(0_0_0_/_0.3)] text-white p-[10px] absolute top-[100%] left-[50%] whitespace-nowrap -translate-x-1/2 hidden"
+              >
+                <li>新発売</li>
+                <li>おすすめ</li>
+                <li>期間限定</li>
+              </ul>
+            </li>
+            <li><a href="#shop" class="text-white">Shop</a></li>
+          </ul>
+        </nav>
       </div>
-      <nav>
-        <ul>
-          <li>
-            <a href="#about">About</a>
-          </li>
-          <li><a href="#menu">Menu</a></li>
-          <li>
-            <ul>
-              <li>新発売</li>
-              <li>おすすめ</li>
-              <li>期間限定</li>
-            </ul>
-          </li>
-          <li><a href="#shop">Shop</a></li>
-        </ul>
-      </nav>
     </header>
+
+    <div>
+      <picture>
+        <source media="(min-width: 768px)" srcset="./img/fv.jpg" />
+        <img loading="lazy" src="./img/sp/fv.jpg" alt="ドーナツ" />
+      </picture>
+    </div>
   </body>
 </html>
