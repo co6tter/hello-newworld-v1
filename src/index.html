@@ -18,13 +18,19 @@
     />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body class="bg-gray-800">
+  <body>
     <header
       class="fixed top-0 left-0 border-b border-[rgb(241_238_228_/_0.25)] w-full text-center p-3"
     >
       <div>
-        <h1 class="w-[200px] my-0 mx-auto">
-          <img loading="lazy" src="./img/logo.svg" alt="Sweet Shop" />
+        <h1 class="w-[200px] mx-auto">
+          <img
+            loading="lazy"
+            src="./img/logo.svg"
+            alt="Sweet Shop"
+            width="200"
+            height="31"
+          />
         </h1>
         <nav class="mt-[10px]">
           <ul class="flex justify-center gap-5">
@@ -50,8 +56,116 @@
     <div>
       <picture>
         <source media="(min-width: 768px)" srcset="./img/fv.jpg" />
-        <img loading="lazy" src="./img/sp/fv.jpg" alt="ドーナツ" />
+        <img
+          loading="lazy"
+          src="./img/sp/fv.jpg"
+          alt="ドーナツ"
+          width="750"
+          height="1100"
+        />
       </picture>
     </div>
+
+    <section id="about" class="py-10 bg-[#f1eee4]">
+      <div class="px-10">
+        <h2 class="text-center mb-10">
+          <span class="block text-4xl">About</span>
+          <span class="block text-xs">- 当店について -</span>
+        </h2>
+        <div class="mt-5">
+          <img
+            loading="lazy"
+            src="./img/about.jpg"
+            alt="イチゴとチョコ"
+            width="467"
+            height="315"
+          />
+          <div class="mt-5">
+            <p class="text-xs">当店ではスイーツを提供しています。</p>
+            <p class="text-xs mt-4">心に残るひとときをお過ごしください。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="py-20 bg-[#f1eee4]">
+      <div class="px-10">
+        <h2 class="text-center mb-10">
+          <span class="block text-4xl">Menu</span>
+          <span class="block text-xs">- 今月のケーキ -</span>
+        </h2>
+        <div>
+          <ul>
+            <li>
+              <div>
+                <img
+                  loading="lazy"
+                  src="./img/menu1.jpg"
+                  alt="ストロベリーケーキ"
+                  width="634"
+                  height="476"
+                  class="js-modal-open"
+                />
+              </div>
+              <div class="text-center py-4 px-[10px]">
+                <h3>
+                  <span class="block text-lg">ストロベリーケーキ</span>
+                  <span class="block text-xs text-[#a98c5f] mt-2"
+                    >- Strawberry cake -</span
+                  >
+                </h3>
+                <p class="text-xs text-[#a98c5f] mt-8">イチゴがたくさん</p>
+              </div>
+            </li>
+            <li class="mt-16">
+              <div>
+                <img
+                  loading="lazy"
+                  src="./img/menu2.jpg"
+                  alt="ブルーベリーチーズケーキ"
+                  width="634"
+                  height="476"
+                  class="js-modal-open"
+                />
+              </div>
+              <div class="text-center py-4 px-[10px]">
+                <h3>
+                  <span class="block text-lg">ブルーベリーチーズケーキ</span>
+                  <span class="block text-xs text-[#a98c5f] mt-2"
+                    >- Blueberry cheesecake -</span
+                  >
+                </h3>
+                <p class="text-xs text-[#a98c5f] mt-8">
+                  ブルーベリーがたくさん
+                </p>
+              </div>
+            </li>
+            <li class="mt-16">
+              <div>
+                <img
+                  loading="lazy"
+                  src="./img/menu3.jpg"
+                  alt="チョコレートケーキ"
+                  width="634"
+                  height="476"
+                  class="js-modal-open"
+                />
+              </div>
+              <div class="text-center py-4 px-[10px]">
+                <h3>
+                  <span class="block text-lg">チョコレートケーキ</span>
+                  <span class="block text-xs text-[#a98c5f] mt-2"
+                    >- Chocolate cake -</span
+                  >
+                </h3>
+                <p class="text-xs text-[#a98c5f] mt-8">
+                  チョコレートがたくさん
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
