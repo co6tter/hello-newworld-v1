@@ -164,8 +164,28 @@
               </div>
             </li>
           </ul>
+          <div
+            class="fixed bg-[rgb(0_0_0_/_0.7)] z-10 top-0 right-0 bottom-0 left-0 hidden"
+            id="js-overlay"
+          >
+            <div
+              class="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20 max-w-[80%] max-h-[80%] hidden"
+              id="js-modal"
+            >
+              <img class="w-full" id="modal-img" />
+            </div>
+          </div>
         </div>
       </div>
     </section>
+    <button
+      type="button"
+      class="fixed right-5 bottom-5 bg-white w-[60px] h-[60px] rounded-full border border-[#ccc] text-[14px] font-bold text-center leading-[60px] hidden cursor-pointer"
+      id="js-to-top"
+    >
+      TOP
+    </button>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>
