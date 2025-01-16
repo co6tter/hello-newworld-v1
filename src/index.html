@@ -20,10 +20,10 @@
   </head>
   <body>
     <header
-      class="fixed top-0 left-0 border-b border-[rgb(241_238_228_/_0.25)] w-full text-center p-3"
+      class="fixed top-0 left-0 border-b border-[rgb(241_238_228_/_0.25)] w-full text-center p-4"
     >
       <div>
-        <h1 class="w-[200px] mx-auto">
+        <h1 class="w-52 mx-auto">
           <img
             loading="lazy"
             src="./img/logo.svg"
@@ -32,15 +32,15 @@
             height="31"
           />
         </h1>
-        <nav class="mt-[10px]">
-          <ul class="flex justify-center gap-5">
+        <nav class="mt-3">
+          <ul class="flex justify-center gap-6">
             <li>
               <a href="#about" class="text-white">About</a>
             </li>
             <li class="relative">
               <a href="#menu" class="text-white" id="js-toggle">Menu</a>
               <ul
-                class="bg-[rgb(0_0_0_/_0.3)] text-white p-[10px] absolute top-[100%] left-[50%] whitespace-nowrap -translate-x-1/2 hidden"
+                class="bg-[rgb(0_0_0_/_0.3)] text-white p-4 absolute top-[100%] left-[50%] whitespace-nowrap -translate-x-1/2 hidden"
               >
                 <li>新発売</li>
                 <li>おすすめ</li>
@@ -66,13 +66,13 @@
       </picture>
     </div>
 
-    <section id="about" class="py-10 bg-[#f1eee4]">
-      <div class="px-10">
-        <h2 class="text-center mb-10">
+    <section id="about" class="py-12 bg-[#f1eee4]">
+      <div class="px-12">
+        <h2 class="text-center">
           <span class="block text-4xl">About</span>
           <span class="block text-xs">- 当店について -</span>
         </h2>
-        <div class="mt-5">
+        <div class="mt-6">
           <img
             loading="lazy"
             src="./img/about.jpg"
@@ -80,7 +80,7 @@
             width="467"
             height="315"
           />
-          <div class="mt-5">
+          <div class="mt-6">
             <p class="text-xs">当店ではスイーツを提供しています。</p>
             <p class="text-xs mt-4">心に残るひとときをお過ごしください。</p>
           </div>
@@ -90,11 +90,11 @@
 
     <section id="menu" class="py-20 bg-[#f1eee4]">
       <div class="px-10">
-        <h2 class="text-center mb-10">
+        <h2 class="text-center">
           <span class="block text-4xl">Menu</span>
           <span class="block text-xs">- 今月のケーキ -</span>
         </h2>
-        <div>
+        <div class="mt-6">
           <ul>
             <li>
               <div>
@@ -107,7 +107,7 @@
                   class="js-modal-open"
                 />
               </div>
-              <div class="text-center py-4 px-[10px]">
+              <div class="text-center p-4">
                 <h3>
                   <span class="block text-lg">ストロベリーケーキ</span>
                   <span class="block text-xs text-[#a98c5f] mt-2"
@@ -128,7 +128,7 @@
                   class="js-modal-open"
                 />
               </div>
-              <div class="text-center py-4 px-[10px]">
+              <div class="text-center p-4">
                 <h3>
                   <span class="block text-lg">ブルーベリーチーズケーキ</span>
                   <span class="block text-xs text-[#a98c5f] mt-2"
@@ -151,7 +151,7 @@
                   class="js-modal-open"
                 />
               </div>
-              <div class="text-center py-4 px-[10px]">
+              <div class="text-center p-4">
                 <h3>
                   <span class="block text-lg">チョコレートケーキ</span>
                   <span class="block text-xs text-[#a98c5f] mt-2"
@@ -178,9 +178,83 @@
         </div>
       </div>
     </section>
+
+    <section
+      id="shop"
+      class="bg-[url('../img/sp/bg-shop.jpg')] bg-center bg-cover py-20"
+    >
+      <div class="px-5">
+        <h2 class="text-center mb-10 text-white">
+          <span class="block text-4xl">Shop</span>
+          <span class="block text-xs">- ショップ情報 -</span>
+        </h2>
+        <div>
+          <p class="text-white text-center text-xs">
+            ただいま、オンラインストアを準備中です。
+            <br />
+            最新情報は以下より送信いただいた
+            <br />
+            メールアドレスへご案内いたします。
+          </p>
+          <form action="" method="post" class="mt-10">
+            <input
+              type="email"
+              class="w-full rounded bg-[rgb(255_255_255_/_0.7)] border-none p-4"
+              placeholder="sample@sample.com"
+            />
+          </form>
+          <button
+            type="submit"
+            class="rounded border-none block mt-4 mx-auto w-28 p-3 text-white bg-[#a98c5f]"
+          >
+            SEND
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <footer class="bg-[#3c301e] text-center pt-12 text-white">
+      <div class="w-52 mx-auto">
+        <img
+          loading="lazy"
+          src="./img/logo.svg"
+          alt="Sweet Shop"
+          width="200"
+          height="31"
+        />
+      </div>
+      <p class="text-xs">- 各SNS更新中 -</p>
+      <ul class="mt-12 flex justify-center gap-6 px-6">
+        <li class="text-xs mt-4 w-24">
+          <a href="https://www.instagram.com/" target="_blank"
+            ><img
+              loading="lazy"
+              src="./img/icon-instagram.png"
+              alt="Instagram"
+              class="w-14 mx-auto"
+            />
+            <p class="text-xs mt-4">メニューご案内</p>
+          </a>
+        </li>
+        <li class="text-xs mt-4 w-24">
+          <a href="https://www.youtube.com/" target="_blank"
+            ><img
+              loading="lazy"
+              src="./img/icon-youtube.png"
+              alt="Youtube"
+              class="w-14 mx-auto"
+            />
+            <p class="text-xs mt-4">制作の裏側</p>
+          </a>
+        </li>
+      </ul>
+      <div class="border-t border-[rgb(241_238_228_/_0.25)] p-4 mt-12">
+        <small class="text-xs">&copy; 2025 Sweet Shop.</small>
+      </div>
+    </footer>
     <button
       type="button"
-      class="fixed right-5 bottom-5 bg-white w-[60px] h-[60px] rounded-full border border-[#ccc] text-[14px] font-bold text-center leading-[60px] hidden cursor-pointer"
+      class="fixed right-5 bottom-5 bg-white w-16 h-16 rounded-full border border-[#ccc] text-xs font-bold text-center leading-[4rem] hidden cursor-pointer"
       id="js-to-top"
     >
       TOP
