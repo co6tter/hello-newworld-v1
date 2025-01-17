@@ -22,8 +22,10 @@
     <header
       class="fixed top-0 left-0 border-b border-[rgb(241_238_228_/_0.25)] w-full text-center p-4"
     >
-      <div>
-        <h1 class="w-52 mx-auto">
+      <div
+        class="md:max-w-[1080px] md:px-10 md:mx-auto md:flex md:justify-between"
+      >
+        <h1 class="w-52 mx-auto md:m-0">
           <img
             loading="lazy"
             src="./img/logo.svg"
@@ -33,21 +35,54 @@
           />
         </h1>
         <nav class="mt-3">
-          <ul class="flex justify-center gap-6">
+          <ul class="flex justify-center gap-6 md:gap-10">
             <li>
-              <a href="#about" class="text-white">About</a>
+              <a
+                href="#about"
+                class="text-white md:transition-opacity md:duration-300 md:hover:opacity-70"
+                >About</a
+              >
             </li>
             <li class="relative">
-              <a href="#menu" class="text-white" id="js-toggle">Menu</a>
+              <a
+                href="#menu"
+                class="text-white md:transition-opacity md:duration-300 md:hover:opacity-70"
+                id="js-toggle"
+                >Menu</a
+              >
               <ul
                 class="bg-[rgb(0_0_0_/_0.3)] text-white p-4 absolute top-[100%] left-[50%] whitespace-nowrap -translate-x-1/2 hidden"
               >
-                <li>新発売</li>
-                <li>おすすめ</li>
-                <li>期間限定</li>
+                <li>
+                  <a
+                    href="#menu"
+                    class="md:transition-opacity md:duration-300 md:hover:opacity-70 js-move"
+                    >新発売</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#menu"
+                    class="md:transition-opacity md:duration-300 md:hover:opacity-70 js-move"
+                    >おすすめ</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#menu"
+                    class="md:transition-opacity md:duration-300 md:hover:opacity-70 js-move"
+                    >期間限定</a
+                  >
+                </li>
               </ul>
             </li>
-            <li><a href="#shop" class="text-white">Shop</a></li>
+            <li>
+              <a
+                href="#shop"
+                class="text-white md:transition-opacity md:duration-300 md:hover:opacity-70"
+                >Shop</a
+              >
+            </li>
           </ul>
         </nav>
       </div>
@@ -66,13 +101,13 @@
       </picture>
     </div>
 
-    <section id="about" class="py-12 bg-[#f1eee4]">
-      <div class="px-12">
+    <section id="about" class="bg-[#f1eee4] px-12 md:py-24">
+      <div class="px-12 md:max-w-[calc(1040px+20px*2)] md:mx-auto">
         <h2 class="text-center">
-          <span class="block text-4xl">About</span>
+          <span class="block text-4xl md:text-6xl">About</span>
           <span class="block text-xs">- 当店について -</span>
         </h2>
-        <div class="mt-6">
+        <div class="mt-6 md:flex md:gap-10 md:items-center">
           <img
             loading="lazy"
             src="./img/about.jpg"
@@ -80,22 +115,26 @@
             width="467"
             height="315"
           />
-          <div class="mt-6">
-            <p class="text-xs">当店ではスイーツを提供しています。</p>
-            <p class="text-xs mt-4">心に残るひとときをお過ごしください。</p>
+          <div class="mt-6 md:mt-0">
+            <p class="text-xs md:text-base">
+              当店ではスイーツを提供しています。
+            </p>
+            <p class="text-xs mt-4 md:text-base md:mt-8">
+              心に残るひとときをお過ごしください。
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="menu" class="py-20 bg-[#f1eee4]">
-      <div class="px-10">
+    <section id="menu" class="bg-[#f1eee4] py-20 md:pt-0 md:pb-24">
+      <div class="px-10 md:max-w-[calc(1040px+20px*2)] md:mx-auto">
         <h2 class="text-center">
-          <span class="block text-4xl">Menu</span>
+          <span class="block text-4xl md:text-6xl">Menu</span>
           <span class="block text-xs">- 今月のケーキ -</span>
         </h2>
         <div class="mt-6">
-          <ul>
+          <ul class="md:flex md:gap-5">
             <li>
               <div>
                 <img
@@ -117,7 +156,7 @@
                 <p class="text-xs text-[#a98c5f] mt-8">イチゴがたくさん</p>
               </div>
             </li>
-            <li class="mt-16">
+            <li class="mt-16 md:mt-0">
               <div>
                 <img
                   loading="lazy"
@@ -140,7 +179,7 @@
                 </p>
               </div>
             </li>
-            <li class="mt-16">
+            <li class="mt-16 md:mt-0">
               <div>
                 <img
                   loading="lazy"
@@ -181,14 +220,14 @@
 
     <section
       id="shop"
-      class="bg-[url('../img/sp/bg-shop.jpg')] bg-center bg-cover py-20"
+      class="bg-[url('../img/bg-shop.jpg')] bg-center bg-cover py-20 md:py-16"
     >
-      <div class="px-5">
-        <h2 class="text-center mb-10 text-white">
-          <span class="block text-4xl">Shop</span>
+      <div class="px-5 md:max-w-[600px] md:mx-auto">
+        <h2 class="text-center text-white">
+          <span class="block text-4xl md:text-6xl">Shop</span>
           <span class="block text-xs">- ショップ情報 -</span>
         </h2>
-        <div>
+        <div class="mt-10">
           <p class="text-white text-center text-xs">
             ただいま、オンラインストアを準備中です。
             <br />
@@ -196,19 +235,20 @@
             <br />
             メールアドレスへご案内いたします。
           </p>
-          <form action="" method="post" class="mt-10">
+          <form action="" method="post" class="mt-10 md:flex md:gap-5">
             <input
               type="email"
               class="w-full rounded bg-[rgb(255_255_255_/_0.7)] border-none p-4"
               placeholder="sample@sample.com"
             />
+            <button
+              type="submit"
+              class="rounded border-none block mt-4 mx-auto w-28 p-3 text-white bg-[#a98c5f] md:mt-0 md:transition-opacity md:duration-300 md:hover:opacity-70 md:cursor-pointer"
+              id="js-submit"
+            >
+              SEND
+            </button>
           </form>
-          <button
-            type="submit"
-            class="rounded border-none block mt-4 mx-auto w-28 p-3 text-white bg-[#a98c5f]"
-          >
-            SEND
-          </button>
         </div>
       </div>
     </section>
@@ -223,8 +263,8 @@
           height="31"
         />
       </div>
-      <p class="text-xs">- 各SNS更新中 -</p>
-      <ul class="mt-12 flex justify-center gap-6 px-6">
+      <p class="text-xs md:mt-4">- 各SNS更新中 -</p>
+      <ul class="mt-12 flex justify-center px-6 gap-6 md:gap-10">
         <li class="text-xs mt-4 w-24">
           <a href="https://www.instagram.com/" target="_blank"
             ><img

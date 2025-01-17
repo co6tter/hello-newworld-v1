@@ -7,6 +7,10 @@
     return false;
   });
 
+  jQuery(".js-move").on("click", function () {
+    jQuery(this).parent().parent().slideUp();
+  });
+
   jQuery(window).on("scroll", function () {
     if (jQuery(window).scrollTop() > 80) {
       jQuery("#js-to-top").fadeIn();
@@ -29,5 +33,12 @@
   jQuery("#js-overlay").on("click", function () {
     jQuery("#js-overlay, #js-modal").fadeOut(300);
     jQuery("body").removeClass("is-fixed");
+  });
+
+  jQuery("#js-submit").on("click", function (e) {
+    e.preventDefault();
+    const $email = jQuery("input[type=email]");
+    alert(`お試し入力内容: ${$email.val()}`);
+    $email.val("");
   });
 }
