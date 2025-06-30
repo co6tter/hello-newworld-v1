@@ -1,0 +1,29 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: 22
+    commands:
+      - echo Installing dependencies...
+      - npm ci
+  pre_build:
+    commands:
+      - echo Pre-build started on `date`
+  build:
+    commands:
+      - echo Build started on `date`
+      - echo Building Tailwind CSS...
+      - npx tailwindcss -i ./src/css/index.css -o ./src/css/style.css --minify
+  post_build:
+    commands:
+      - echo Build completed on `date`
+artifacts:
+  files:
+    - 'index.html'
+    - 'src/**/*'
+    - '*.png'
+    - '*.ico'
+    - 'site.webmanifest'
+  base-directory: '.'
+  discard-paths: no
